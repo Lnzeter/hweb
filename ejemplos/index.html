@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Información técnica y descriptiva -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Página web autobiográfica estructurada con HTML5 semántico.">
+    <title>Biografía - Roberto Carlos Ceballos Nava</title>
 </head>
 <body>
-    <h1>Roberto Carlos Ceballos Nava 
-    <p>Mi matricula es 202424593 soy de Acapunk y naci en el 20 de noviembre del 2004<p>
+    <header>
+        <h1>Roberto Carlos Ceballos Nava</h1>
+        <p>Estudiante de Ingeniería / Apasionado por la Tecnología</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#formacion">Formación Académica</a></li>
+                <li><a href="#proyectos">Proyectos y Habilidades</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Fotografía de perfil de Roberto Carlos Ceballos Nava">
+            <figcaption>Fotografía académica reciente.</figcaption>
+        </figure>
+        <p>
+            Soy una persona apasionada por la tecnología y mis metas académicas actuales son desarrollarme en frontend y backend para conseguir un trabajo remoto el próximo semestre.
+        </p>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación Académica</h2>
+        <article>
+            <h3>Licenciatura en Tecnología / Computación</h3>
+            <p><strong>Institución:</strong> BUAP</p>
+            <p><strong>Periodo:</strong> 2023 - Presente</p>
+            <p>Actualmente cursando asignaturas enfocadas en desarrollo web, estructuras de datos y desarrollo de software.</p>
+        </article>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos y Habilidades Técnicas</h2>
+        <h3>Habilidades Destacadas</h3>
+        <ul>
+            <li>HTML5 y marcado semántico</li>
+            <li>Lógica de programación y algoritmos</li>
+            <li>Control de versiones con Git</li>
+        </ul>
+        <h3>Proyectos Recientes</h3>
+        <ol>
+            <li><strong>Sitio Web Autobiográfico:</strong> Implementación de mejora progresiva y semántica en HTML.</li>
+            <li><strong>Repositorio de Prácticas:</strong> Control de evidencias académicas en GitHub.</li>
+        </ol>
+    </section>
+
+    <section id="intereses">
+        <h2>Intereses y Pasatiempos</h2>
+        <dl>
+            <dt>Desarrollo Web</dt>
+            <dd>Diseño de interfaces accesibles, estándares W3C y optimización.</dd>
+            <dt>Música / Lectura</dt>
+            <dd>Me gusta escuchar rock, indie y rap, dependiendo de la ocasión.</dd>
+        </dl>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@dominio.com">
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="academico">Consulta Académica</option>
+                        <option value="colaboracion">Colaboración / Proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Roberto Carlos Ceballos Nava. Todos los derechos reservados.</p>
+        <p>Desarrollado bajo principios de accesibilidad y Mejora Progresiva.</p>
+    </footer>
 </body>
 </html>
